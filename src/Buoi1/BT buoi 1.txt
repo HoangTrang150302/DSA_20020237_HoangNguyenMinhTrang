@@ -1,0 +1,47 @@
+BÀI 2: Điều gì xảy ra nếu bạn bỏ các từ sau trong HelloWorld.java
+1. public: đây là lỗi cú pháp
+Chương trình báo lỗi "Main method not found in class HellloWorld"
+2. static: đây là lỗi cú pháp
+Chương trình báo lỗi "Error: Main method is not static in class HelloWorld, please define the main method as:
+   		public static void main(String[] args)"
+3. void: thiếu void thì phương thức thiếu return type void tương ứng với không có return type
+Chương trình báo lỗi "java: invalid method declaration; return type required"
+4. args: thiếu tham số dòng lệnh
+java: <identifier> expected
+
+BÀI 3: Điều gì xảy ra nếu bạn viết sai các từ sau trong HelloWorld.java
+1. public: đây là lỗi cú pháp
+java: <identifier> expected
+2. static: đây là lỗi cú pháp
+java: <identifier> expected
+3. void: 
+java: cannot find symbol
+symbol:   class voidr
+location: class HelloWorld
+4. args: chương trình vẫn chạy bình thường vì args chỉ là tên biến chứ không phải từ khóa, Java chỉ yêu cầu có một biến kiểu String[], biến đó là mảng chứa các tham số dòng lệnh khi chạy chương trình
+
+BÀI 4: Điều gì xảy ra nếu bạn gõ các dòng lệnh sau (chương trình Hi.java)
+1. java Hi: không có tham số dòng lệnh
+Hi Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
+        at Hi.main(Hi.java:6)
+2. java Hi @!&^%: chương trình báo lỗi
+The ampersand (&) character is not allowed. The & operator is reserved for future use; wrap an ampersand in double quotation marks ("&") to pass it as part of a string.
+3. java Hi 1234
+Hi 1234. How are you?
+4. java Hi.class Bob
+Error: Could not find or load main class Hi.class
+Caused by: java.lang.ClassNotFoundException: Hi.class
+5. java Hi.java Bob
+error: class found on application class path: Hi
+6. java Hi Alice Bob
+Hi Alice. How are you?
+
+BÀI 7: Khi biên dịch chương trình bằng cách gõ lệnh javac Hello.java, chương trình báo lỗi
+Hello.java:3: error: unmappable character (0x90) for encoding windows-1252
+        System.out.println("Doesn'tÔ?úexecute");
+Chương trình thiếu String []args
+
+
+	 
+
+

@@ -1,0 +1,1 @@
+BÀI 1: Gán giá trị cho tất cả các biến a, b, t bằng a
