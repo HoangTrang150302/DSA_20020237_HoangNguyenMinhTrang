@@ -26,9 +26,10 @@ public class Solution {
         newNode.value = number;
         newNode.next = null;
 
-        if (first == null)
+        if (first == null && last == null)
         {
             first = newNode;
+            last = newNode;
             return;
         }
 
@@ -41,6 +42,10 @@ public class Solution {
         if(first == null)
         {
             return;
+        }
+        else if(first.next == null)
+        {
+            last = null;
         }
         first = first.next;
     }

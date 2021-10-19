@@ -1,3 +1,5 @@
+package Buoi1;
+
 public class Initials
 {
     public static void main(String [] args)

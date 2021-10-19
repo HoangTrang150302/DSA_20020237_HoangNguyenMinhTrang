@@ -1,4 +1,4 @@
-//package edu.princeton.cs.algs4;
+package Buoi3;//package edu.princeton.cs.algs4;
 import edu.princeton.cs.algs4.*;
 
 public class ThreeSum {

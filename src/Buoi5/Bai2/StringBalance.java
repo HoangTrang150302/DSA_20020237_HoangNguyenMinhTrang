@@ -2,7 +2,7 @@ package Buoi5.Bai2;
 
 import java.util.Stack;
 
-public class TestString
+public class StringBalance
 {
     public static String isBalanced(String s) {
         if(s.length() % 2 == 1)
@@ -87,11 +87,10 @@ public class TestString
         }
         return "YES";
     }*/
-
-
-}
     public static void main(String []args)
     {
         String s = "{()}";
     }
 }
+
+
