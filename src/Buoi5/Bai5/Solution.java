@@ -1,4 +1,4 @@
-package Buoi5;
+package Buoi5.Bai5;
 
 import java.util.Scanner;
 import java.util.Stack;
@@ -47,8 +47,7 @@ public class Solution
 
     public static void main(String []args)
     {
-        //Solution stack = new Solution();
-        Stack<String> stack = new Stack<>();
+        Solution stack = new Solution();
         String s = "";
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -57,24 +56,15 @@ public class Solution
             int choice = sc.nextInt();
             if (choice == 1)
             {
-                //stack.addFirst(s);
-                stack.push(s);
+                stack.addFirst(s);
                 String add = sc.next();
                 s += add;
             }
             else if (choice == 2)
             {
                 int k = sc.nextInt();
-                stack.push(s);
-                //stack.addFirst(s);
-                if(k == s.length())
-                {
-                    s = "";
-                }
-                else
-                {
-                    s = s.substring(0, s.length() - k);
-                }
+                stack.addFirst(s);
+                s = s.substring(0, s.length() - k);
             }
             else if (choice == 3)
             {
@@ -83,10 +73,8 @@ public class Solution
             }
             else if (choice == 4)
             {
-                s = stack.peek();
-                stack.pop();
+                s = stack.undo();
             }
         }
-
     }
 }

@@ -1,4 +1,4 @@
-package Buoi5;
+package Buoi5.Bai1CodeMau;
 
 /******************************************************************************
  *  Compilation:  javac Queue.java
