@@ -1,0 +1,3 @@
+Bài 3: Theo lý thuyết thì ta có thể hoàn toàn lưu dữ liệu đầu vào cho hai thuật toán sắp xếp chọn vào Linklist.
+Tuy nhiên đối với 2 thuật toán này thì dùng mảng sẽ tiện hon vì ta phải đổi chỗ và di chuyển phần từ khá nhiều,
+hơn nữa 2 thuật toán này không làm thay đổi kích thước của mảng nên không cần thiết phải dùng đến Linklist.

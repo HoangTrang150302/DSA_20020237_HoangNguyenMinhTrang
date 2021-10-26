@@ -2,6 +2,8 @@ package Buoi6;
 
 import edu.princeton.cs.algs4.*;
 
+import java.io.FileOutputStream;
+
 public class MyInsertion
 {
     public static void sort(int []a)
@@ -24,19 +26,30 @@ public class MyInsertion
 
     public static void main(String[] args)
     {
-        In in = new In("D:\\Nam_hai\\Semester_1\\DSA\\algs4-data\\4Kints.txt"); // tạo luồng đọc từ file
-        In in1 = new In("D:\\Nam_hai\\Semester_1\\DSA\\algs4-data\\4Kints.txt"); // tạo luồng đọc từ file
-        Out out = new Out("D:\\Nam_hai\\Semester_1\\DSA\\sort data\\sorted.txt");
-        int [] a = in.readAllInts();  // đọc toàn bộ file vào mảng a
-        int [] b = in1.readAllInts();  // đọc toàn bộ file vào mảng a
-        Stopwatch stopwatch = new Stopwatch();
-        MyInsertion.sort(a);
-        StdOut.println(stopwatch.elapsedTime());
-        StdArrayIO.print(a);
+        In random = new In("D:\\Nam_hai\\Semester_1\\DSA\\sort_data\\random.txt");
+        In sorted = new In("D:\\Nam_hai\\Semester_1\\DSA\\sort_data\\sorted.txt");
+        In sortDescending = new In("D:\\Nam_hai\\Semester_1\\DSA\\sort_data\\sort_descending.txt");
+        In sameNumbers = new In("D:\\Nam_hai\\Semester_1\\DSA\\sort_data\\same_numbers.txt");
 
-        MyInsertion.sort(b);
-        //StdOut.println(stopwatch.elapsedTime());
+        int [] randomArray = random.readAllInts();
+        int [] sortedArray = random.readAllInts();
+        int [] sortDescendingArray = random.readAllInts();
+        int [] sameNumbersArray = random.readAllInts();
 
-        StdArrayIO.print(b);
+        Stopwatch randomStopwatch = new Stopwatch();
+        MyInsertion.sort(randomArray);
+        StdOut.println("Random data: " + randomStopwatch.elapsedTime());
+
+        Stopwatch sortedStopwatch = new Stopwatch();
+        MyInsertion.sort(sortedArray);
+        StdOut.println("Sorted data: " + sortedStopwatch.elapsedTime());
+
+        Stopwatch sortDescendingStopwatch = new Stopwatch();
+        MyInsertion.sort(sortDescendingArray);
+        StdOut.println("sortDescending data: " + sortDescendingStopwatch.elapsedTime());
+
+        Stopwatch sameNumbersStopwatch = new Stopwatch();
+        MyInsertion.sort(sameNumbersArray);
+        StdOut.println("sameNumbers data: " + sameNumbersStopwatch.elapsedTime());
     }
 }
