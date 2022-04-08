@@ -1,4 +1,4 @@
-package Buoi9.Demo;
+package Buoi9;
 
 public class BT<Key> {
 
@@ -66,11 +66,6 @@ public class BT<Key> {
         System.err.print(this);
         System.err.print(") ");
     }
-
-//    public Key findMax()
-//    {
-//
-//    }
 
     public int count()
     {

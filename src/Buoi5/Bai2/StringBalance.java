@@ -51,42 +51,7 @@ public class StringBalance
         if(!stack.isEmpty()) return "NO";
         return "YES";
     }
-    /*public static String isBalanced(String s) {
-        //Stack<Character> stack = new Stack<>();
-        int n = s.length();
-        if (n % 2 == 1)
-        {
-            return "NO";
-        }
 
-        for (int i = 0; i < n/2; i++)
-        {
-            char l = s.charAt(i);
-            char r = s.charAt(n - i - 1);
-            if (l == '{')
-            {
-                if(r != '}')
-                {
-                    return "NO";
-                }
-            }
-            else if (l == '[')
-            {
-                if (r != ']')
-                {
-                    return "NO";
-                }
-            }
-            else if (l == '(')
-            {
-                if(r != ')')
-                {
-                    return "NO";
-                }
-            }
-        }
-        return "YES";
-    }*/
     public static void main(String []args)
     {
         String s = "{()}";

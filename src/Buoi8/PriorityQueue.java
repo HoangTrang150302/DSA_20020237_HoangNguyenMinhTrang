@@ -1,5 +1,6 @@
 package Buoi8;
 
+import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
@@ -7,7 +8,7 @@ import java.util.Comparator;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class ProrityQueue {
+public class PriorityQueue {
     /******************************************************************************
      *  Compilation:  javac MaxPQ.java
      *  Execution:    java MaxPQ < input.txt
@@ -299,12 +300,22 @@ public class ProrityQueue {
          */
         public static void main(String[] args) {
             MaxPQ<String> pq = new MaxPQ<String>();
-            while (!StdIn.isEmpty()) {
-                String item = StdIn.readString();
-                if (!item.equals("-")) pq.insert(item);
+            In in = new In("D:\\Nam_hai\\Semester_1\\DSA\\algs4-data\\tinyPQ.txt");
+            String [] input = in.readAllStrings();
+
+            for (int i = 0; i < input.length; i++) {
+                if (!input[i].equals("-")) pq.insert(input[i]);
                 else if (!pq.isEmpty()) StdOut.print(pq.delMax() + " ");
             }
             StdOut.println("(" + pq.size() + " left on pq)");
+
+//            while (!StdIn.isEmpty()) {
+//                String item = StdIn.readString();
+//
+//                if (!item.equals("-")) pq.insert(item);
+//                else if (!pq.isEmpty()) StdOut.print(pq.delMax() + " ");
+//            }
+//            StdOut.println("(" + pq.size() + " left on pq)");
         }
 
     }

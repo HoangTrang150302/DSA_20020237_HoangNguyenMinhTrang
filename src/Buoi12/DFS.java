@@ -10,7 +10,7 @@ import java.util.Scanner;
 //        0 0 1 0
 //        1 0 0 0
 
-public class Solution {
+public class DFS {
 
     static int[][] grid;
     static boolean[][] visited;
@@ -60,7 +60,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named DFS. */
         Scanner scanner = new Scanner(System.in);
         N = scanner.nextInt();
         M = scanner.nextInt();

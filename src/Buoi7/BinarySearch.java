@@ -1,5 +1,6 @@
 package Buoi7;
 
+import java.util.Collections;
 import java.util.List;
 
 public class BinarySearch {
@@ -8,6 +9,7 @@ public class BinarySearch {
         int last = arr.size() - 1;
         int middle;
 
+        Collections.sort(arr);
         while(first <= last)
         {
             middle = first - (first - last)/2;

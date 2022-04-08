@@ -1,6 +1,6 @@
-import edu.princeton.cs.algs4.In;
+package Collinear;
 
-import java.util.Arrays;
+import edu.princeton.cs.algs4.In;
 
 public class Test {
     public static void print(Point []points)

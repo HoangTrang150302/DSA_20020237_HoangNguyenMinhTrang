@@ -2,7 +2,7 @@ package Buoi9;
 
 import java.util.Scanner;
 
-public class PostOrder {
+public class PreOrder {
     private static class Node {
         Node left;
         Node right;
@@ -15,16 +15,16 @@ public class PostOrder {
         }
     }
 
-    public static void postOrder(Node root) {
+    public static void preOrder(Node root) {
+        System.out.print(root.data + " ");
         if (root.left != null)
         {
-            postOrder(root.left);
+            preOrder(root.left);
         }
         if (root.right != null)
         {
-            postOrder(root.right);
+            preOrder(root.right);
         }
-        System.out.print(root.data + " ");
     }
 
     public static Node insert(Node root, int data) {
@@ -52,6 +52,6 @@ public class PostOrder {
             root = insert(root, data);
         }
         scan.close();
-        postOrder(root);
+        preOrder(root);
     }
 }

@@ -1,2 +1,5 @@
-package Review;public class ResizingArray {
+package Review;
+
+public class ResizingArray {
+
 }
